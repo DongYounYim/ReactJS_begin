@@ -22,3 +22,9 @@ How to use ReactJS with Nomad
 ##### - -<script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script> 사용
 ##### - -잘못된 props의 타입이 들어오는 것을 체크하기 위함
 ##### - -isRequired를 이용해 반드시 필요한 props인 것도 명시 가능.
+
+### 4. Create ReactApp
+##### - -Node.js 설치 : node -v 로 설치확인 npm install npx -g 명령어 사용하여 npx 설치하여 npx -v 확인
+##### - -npx create-react-app "폴더이름" 으로 시작
+##### - -package.json 에서 scripts에 start, bulid, test, eject 등 확인
+##### - -npm start로 실행, 디폴트 생성 파일들 정리
