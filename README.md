@@ -23,8 +23,16 @@ How to use ReactJS with Nomad
 ##### - -잘못된 props의 타입이 들어오는 것을 체크하기 위함
 ##### - -isRequired를 이용해 반드시 필요한 props인 것도 명시 가능.
 
-### 4. Create ReactApp
+### 5. Create ReactApp
 ##### - -Node.js 설치 : node -v 로 설치확인 npm install npx -g 명령어 사용하여 npx 설치하여 npx -v 확인
 ##### - -npx create-react-app "폴더이름" 으로 시작
 ##### - -package.json 에서 scripts에 start, bulid, test, eject 등 확인
 ##### - -npm start로 실행, 디폴트 생성 파일들 정리
+##### - -4번과 같이 props 타입 체크를 위해 npm install prop-types 설치
+
+### 6. ReactApp specific
+##### - -css도 모듈로 만들 수 있다.
+##### - -"이름".module.css 라는 파일로 작성
+##### - -.btn / .title / ."name" 형식으로 css 스타일 작성
+##### - -import styles from "./"이름".module.css; 후에 className={styles.name} 형식으로 css 적용 
+##### - -className이 HTML 내에서는 랜덤하게 적용된다.
