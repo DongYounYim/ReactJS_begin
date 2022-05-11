@@ -36,3 +36,12 @@ How to use ReactJS with Nomad
 ##### - -.btn / .title / ."name" 형식으로 css 스타일 작성
 ##### - -import styles from "./"이름".module.css; 후에 className={styles.name} 형식으로 css 적용 
 ##### - -className이 HTML 내에서는 랜덤하게 적용된다.
+
+
+### 6. state가 업데이트 될 때, component 모두 실행되는 것 방지 (효율성) 
+##### - -특정코드의 실행을 제한한다. 3번의 메모와 비슷하다.
+##### - -useEffect(arg1, arg2) arg1은 단 한번만 실행하고 싶은 코드
+##### - -arg2는 변화를 체크하는 array / 배열안에 변수가 변화하면 코드를 실행한다.
+##### - -arg2가 []일 때는 useEffect는 코드가 단 한번만 실행하고 싶을때 (api호출과같이) 사용한다.
+##### - -c.f 자바스크립트를 쓸때는 중괄호{} 필수!
+##### - -cleanUp은 useEffect에서의 ""return (함수)"" 많이 사용되진 않지만 유용한 것
