@@ -15,7 +15,7 @@ How to use ReactJS with Nomad
 
 ### 3. const MemorizedBtn = React.memo(Btn);
 ##### - -본인이 디자인한 컴포넌트가 부모에 의해 상태변경될 때 모든 것이 rerender 될 수 있다.
-##### - -이때, memerize를 통해 상태가 변경된 컴포넌트만 rerender될 수 있도록 사용할 수 있다.
+##### - -이때, memorize를 통해 상태가 변경된 컴포넌트만 rerender될 수 있도록 사용할 수 있다.
 ##### - -위와 같이 선언하고 컴포넌트 이름은 MemerizedBtn으로 사용하면 된다.
 
 ### 4. props의 type checking;
@@ -37,7 +37,6 @@ How to use ReactJS with Nomad
 ##### - -import styles from "./"이름".module.css; 후에 className={styles.name} 형식으로 css 적용 
 ##### - -className이 HTML 내에서는 랜덤하게 적용된다.
 
-
 ### 7. state가 업데이트 될 때, component 모두 실행되는 것 방지 (효율성) 
 ##### - -특정코드의 실행을 제한한다. 3번의 메모와 비슷하다.
 ##### - -useEffect(arg1, arg2) arg1은 단 한번만 실행하고 싶은 코드
@@ -48,4 +47,7 @@ How to use ReactJS with Nomad
 
 ### 8. Router사용  
 ##### - -npm install react-router-dom
-##### - -npm i react-router-dom@(version) -> ex) npm i react-router-dom@6.2.1
+##### - -버전변경 npm i react-router-dom@(version) -> ex) npm i react-router-dom@6.2.1
+##### - -react-router-dom 6v 이상은 Switch 대신 Routes를 사용 + element 사용
+##### - -Link는 브라우저 전체를 reload하지 않고 페이지를 옮길 수 있다.
+##### - -useParams를 사용하여 id와 라우트를 매치하여 연동할 수 있다. (object 객체를 가지고 오기때문에 골라서 사용)
